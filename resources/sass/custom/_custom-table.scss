@@ -1,0 +1,62 @@
+//
+// Component: Table
+//
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+@mixin hover-pointer {
+  cursor: pointer;
+}
+
+.table-hover-pointer {
+  tbody tr {
+    @include hover {
+      color: $table-hover-color;
+      background-color: $table-hover-bg;
+      @include hover-pointer;
+    }
+  }
+}
+
+.table-dark {
+  color: $table-dark-color;
+  background-color: $table-dark-bg;
+
+  th,
+  td,
+  thead th {
+    border-color: $table-dark-border-color;
+  }
+
+  &.table-bordered {
+    border: 0;
+  }
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: $table-dark-accent-bg;
+    }
+  }
+
+  &.table-hover {
+    tbody tr {
+      @include hover {
+        color: $table-dark-hover-color;
+        background-color: $table-dark-hover-bg;
+        @include hover-pointer;
+      }
+    }
+  }
+
+  &.table-hover-pointer {
+    tbody tr {
+      @include hover {
+        color: $table-dark-hover-color;
+        background-color: $table-dark-hover-bg;
+      }
+    }
+  }
+
+}

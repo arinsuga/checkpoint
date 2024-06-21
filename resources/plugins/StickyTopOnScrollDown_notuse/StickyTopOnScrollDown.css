@@ -1,0 +1,46 @@
+.crud-container {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.crud-container .crud-toolbar {
+    display: flex;
+}
+
+.crud-container .crud-toolbar .btn {
+    margin-right: 5px;
+}
+
+
+.crud-container .crud-title {
+    display: block;
+}
+
+.crud-toolbar.crud-toolbar-start {
+    justify-content: flex-start;
+}
+
+.crud-toolbar.crud-toolbar-center {
+    justify-content: center;
+}
+
+.crud-toolbar.crud-toolbar-end {
+    justify-content: flex-end;
+}
+
+.sticky-scroll {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.crud-container.sticky-scroll .crud-toolbar {
+    justify-content: flex-start;
+}
+.crud-container.sticky-scroll .crud-title {
+    display: none;
+}

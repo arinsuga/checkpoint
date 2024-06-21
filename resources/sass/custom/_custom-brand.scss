@@ -1,0 +1,93 @@
+//
+// Component: Brand
+//
+
+@mixin expand-side-bar() {
+  .brand-link {
+    $brand-link-padding-y: $navbar-brand-padding-y + $navbar-padding-y;
+    display: block;
+    font-size: $navbar-brand-font-size;
+    line-height: $line-height-lg;
+    padding-top: $brand-link-padding-y;
+    padding-bottom: $brand-link-padding-y;
+    transition: width $transition-speed $transition-fn;
+    white-space: nowrap;
+    background-color:#FCFEFF;
+  
+    .brand-image {
+      float: none;
+      display: block;
+      line-height: .8;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -3px;
+      max-height: none; //33px;
+      max-width: 180px;
+      width: auto;
+    }
+  
+    .logo-full {
+      display: block;
+    }
+  
+    .logo-icon {
+      display: none;
+    }
+  
+    .brand-text {
+      display: none;
+    }
+  
+  }
+  
+}
+
+@mixin collapse-side-bar() {
+  .brand-link {
+    $brand-link-padding-y: $navbar-brand-padding-y + $navbar-padding-y;
+    display: block;
+    font-size: $navbar-brand-font-size;
+    line-height: $line-height-lg;
+    padding-top: $brand-link-padding-y;
+    padding-bottom: $brand-link-padding-y;
+    transition: width $transition-speed $transition-fn;
+    white-space: nowrap;
+  
+    .brand-image {
+      float: none;
+      display: block;
+      line-height: .8;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -3px;
+      max-height: 33px;
+      max-width: 200px;
+      width: auto;
+    }
+
+    .logo-full {
+      display: none;
+    }
+  
+    .logo-icon {
+      display: block;
+    }
+
+    .brand-text {
+      display: none;
+    }
+      
+  }
+}
+
+@include expand-side-bar();
+
+.sidebar-mini.layout-fixed.sidebar-collapse {
+  @include collapse-side-bar();
+
+  .main-sidebar:hover {
+    @include expand-side-bar();
+  }
+
+}
+

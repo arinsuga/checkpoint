@@ -1,0 +1,22 @@
+{
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "window.zoomLevel": 2,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveSassCompile.settings.formats":[
+        // More Complex
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css/"
+        }
+    ],
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "extensions.ignoreRecommendations": false,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.autoReveal": false
+}
