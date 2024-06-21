@@ -55,12 +55,11 @@ class AbsenController extends Controller
         $this->middleware('auth');
 
         //#HCD: Set NULL for production
-        $this->ip = '103.119.144.11'; //BALI Fiber ( for testing purpose )
         $this->ip = null; //Production
 
-        $this->baseURL = 'https://maps.googleapis.com/maps/api/geocode/json?';
+        $this->baseURL = env('GOOGLE_GEOCODE_URL', null);
         $this->latlng = null;
-        $this->key = '&key=AIzaSyA0J63CD7v8chu4nfVCdMImoC0QUgWKyro';
+        $this->key = env('GOOGLE_GEOCODE_KEY', null);
 
     }
 
