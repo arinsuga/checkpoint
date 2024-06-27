@@ -1,6 +1,6 @@
 {
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
     "liveServer.settings.donotShowInfoMsg": true,
     "liveSassCompile.settings.formats":[
         // More Complex
