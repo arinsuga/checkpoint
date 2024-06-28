@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon-32x32.png') }}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('img/'.config('a1.uiux.favicon')) }}"/>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -78,8 +78,8 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route('absen') }}" class="brand-link">
-      <img id="logoFull" src="{{ asset('img/logo.jpg') }}" alt="{{ config('a1.company.name','Demo') }}" class="brand-image elevation-3 logo-full">
-      <img id="logoIcon" src="{{ asset('img/favicon-32x32.png') }}" alt="{{ config('a1.company.name','Demo') }}" class="brand-image elevation-3 logo-icon">
+      <img id="logoFull" src="{{ asset('img/'.config('a1.uiux.logo_landscape')) }}" alt="{{ config('a1.company.name','Demo') }}" class="brand-image elevation-3 logo-full">
+      <img id="logoIcon" src="{{ asset('img/'.config('a1.uiux.logo_icon')) }}" alt="{{ config('a1.company.name','Demo') }}" class="brand-image elevation-3 logo-icon">
       <span class="brand-text font-weight-light"></span>
     </a>
 

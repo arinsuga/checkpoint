@@ -14,7 +14,7 @@ return [
     'company' => [
         'version' => '3.0',
         'name' => 'checkpoint',
-        'website' => 'http://appdesk.tech/',
+        'website' => 'https://arinsuga.com/',
         'address' => [
             'street1' => 'Jl. Utama Raya',
             'street2' => 'kav 12',
